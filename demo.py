@@ -21,14 +21,15 @@ from igetui.template.igt_notypopload_template import *
 from igetui.igt_message import *
 from igetui.igt_target import *
 from igetui.template import *
+import os
 
 #toList接口每个用户返回用户状态开关,true：打开 false：关闭
 os.environ['needDetails'] = 'false'
 
-APPKEY = "请输入您的APPKEY"
-APPID = "请输入您的APPID"
-MASTERSECRET = "请输入您的MASTERSECRET"
-CID = "请输入您的CID"
+APPKEY = os.getenv("appkey","请输入您的APPKEY")
+APPID = os.geteny("appid","请输入您的APPID")
+MASTERSECRET = os.geteny("mastersecret","请输入您的MASTERSECRET")
+CID = os.getenv("cid","cid")
 HOST = 'http://sdk.open.api.igexin.com/apiex.htm'
 
 
