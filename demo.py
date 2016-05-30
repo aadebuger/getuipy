@@ -28,7 +28,7 @@ os.environ['needDetails'] = 'false'
 
 APPKEY = os.getenv("appkey","请输入您的APPKEY")
 APPID = os.geteny("appid","请输入您的APPID")
-MASTERSECRET = os.geteny("mastersecret","请输入您的MASTERSECRET")
+MASTERSECRET = os.getenv("mastersecret","请输入您的MASTERSECRET")
 CID = os.getenv("cid","cid")
 HOST = 'http://sdk.open.api.igexin.com/apiex.htm'
 
