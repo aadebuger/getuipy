@@ -211,6 +211,7 @@ def stopTask():
     #2.PushMessageToList接口：支持对多个用户进行推送，建议为50个用户
     #3.pushMessageToApp接口：对单个应用下的所有用户进行推送，可根据省份，标签，机型过滤推送
     #
+getUserStatus()
 pushMessageToSingle()
 #pushMessageToList()
 #pushMessageToApp()
