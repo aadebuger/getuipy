@@ -163,7 +163,7 @@ def TransmissionTemplateDemo():
     template.transmissionType = 1
     template.appId = APPID
     template.appKey = APPKEY
-    template.transmissionContent = '你好，荣泰金服'
+    template.transmissionContent = os.getenv("msg","你好")
     #iOS 推送需要的PushInfo字段 前三项必填，后四项可以填空字符串
     #template.setPushInfo(actionLocKey, badge, message, sound, payload, locKey, locArgs, launchImage)
     #template.setPushInfo("",2,"","","","","","");
